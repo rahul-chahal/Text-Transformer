@@ -1,5 +1,4 @@
-# This is live at https://rahul-chahal.github.io/textutils/
-
+# This is hosted at https://rahul-chahal.github.io/Text-Transformer/
 
 # Getting Started with Create React App
 
