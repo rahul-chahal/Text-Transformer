@@ -17,9 +17,9 @@ jobs:
     - name: Transfer Build Folder on EC2 Instance
       uses: easingthemes/ssh-deploy@v2.1.4
       env:
-        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
-        REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
-        REMOTE_USER: ${{ secrets.DEPLOY_USER }}
+        SSH_PRIVATE_KEY: ${{ secrets.EC2_TEXT_UTIL_SSH_KEY }}
+        REMOTE_HOST: ${{ secrets.HOST_DNS }}
+        REMOTE_USER: ${{ secrets.USERNAME }}
         REMOTE_PORT: ${{ secrets.DEPLOY_PORT }}
         SOURCE: "build/"
-        TARGET: ${{ secrets.DEPLOY_TARGET }}
+        TARGET: ${{ secrets.TARGET_DIR }}
